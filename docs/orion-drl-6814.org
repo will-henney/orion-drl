@@ -1,0 +1,13 @@
+* The Deep Red Line \lambda6814 in the Orion Nebula
+
+- Use MUSE and Keck HIRES data that I have lying around
+- Plus whatever else I come across
+
+
+** What sort of line is it?
+- Is it really a Deep Red Line, given that we do not see it in NGC 346 or any of the other regions
+- Is the spatial distribution really so unique?
+  - I thought it looked quite like the Raman map, but I have not done a quantitative comparison yet
+  - Now I am worrying that it might look more like a Fe II line
+  - Also should compare with the Ca I] lines
+    - Although if it ended up looking like the Ca I] lines, would that  really be so bad? They could be considered honorary DRLs anyway
