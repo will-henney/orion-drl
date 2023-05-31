@@ -9,5 +9,95 @@
 - Is the spatial distribution really so unique?
   - I thought it looked quite like the Raman map, but I have not done a quantitative comparison yet
   - Now I am worrying that it might look more like a Fe II line
+    - Note however that the permitted Fe II lines that we see in NGC 346, such as Fe II 6456, are not seen at all in Orion
   - Also should compare with the Ca I] lines
     - Although if it ended up looking like the Ca I] lines, would that  really be so bad? They could be considered honorary DRLs anyway
+
+
+** Comparison with [Fe II] lines
+- Lots of red lines that are outside HIRES range, unfortunately
+  - But a lot of blue lines that are in the range
+- This is a good multiplet: a4F-a4H
+  - Strongest component we see is 5159
+  - Other observed lines of same multiplet are 5262 and 5112 (very weak)
+    - In NGC 346 we see 5333 and 5376, but not in Orion as far as I can see
+  - [ ] 5159 and 5262 have very different line profiles from the nebula in the Keck spectra of 244-440 and 170-334
+    - 5159 has a broader, more blueshifted line profile that is similar to neutral collisionally excited lines, such as [O I] 6300
+    - 5262 has a narrower, more redshifted line profile that is similar to fluorescent lines such as [N I] 5199
+    - What is the difference between these two lines?
+      - 5159 comes from a.^{4}H (L_k = 5, S_k = 3/2), J_k = 13/2, while 5262 comes from J_k = 11/2 of same term
+      - The ground state has a.^{6}D (L_i = 2, S_i = 5/2), J_i = 9/2, so it does not look like 11/2 can be directly excited from the ground state, since it would require \Delta L = 3, \Delta S = 1,  \Delta J  = 1
+        - This means at least E2 (electric quadrupole) is required in intermediate coupling (\Delta S = \pm1). For E1 we can only have \Delta L = 0, \pm1, \pm2, but not 3
+        - So it would have to go through  another level
+        - But there must be something that allows J_k = 11/2 to be populated, but not 13/2
+  - Details from Atomic Line List
+    #+begin_example
+      Atomic Line List version: 3.00b4   Constructed: 2021-07-21 14:47 GMT
+      Wavelength range: 0 - inf   Unit: Angstrom   Type: Air
+      Radial velocity: 0 km/s
+      Element/Spectrum: Fe II
+
+      -LAB-WAVL-ANG-AIR-|-DLAM--|--SPC--|TT|-----CONFIGURATION-----|-TERM--|--J_i-J_k--|--A_ki---|-TPF-|---LVL-EN--CM-1---|-REF---|
+         5039.0961       3.2e-04 [Fe II] E2         3d7-3d6.(3H).4s a4F-a4H  9/2 - 7/2                  1872.60 - 21711.90 094
+         5072.4062       3.2e-04 [Fe II] E2         3d7-3d6.(3H).4s a4F-a4H  9/2 - 9/2                  1872.60 - 21581.62 094
+         5111.63640      3.0e-04 [Fe II] E2         3d7-3d6.(3H).4s a4F-a4H  9/2 - 11/2                 1872.60 - 21430.36 094
+         5158.7924       3.3e-04 [Fe II] E2         3d7-3d6.(3H).4s a4F-a4H  9/2 - 13/2                 1872.60 - 21251.58 094
+         5184.8048       3.4e-04 [Fe II] E2         3d7-3d6.(3H).4s a4F-a4H  7/2 - 7/2                  2430.14 - 21711.90 094
+         5220.0757       3.4e-04 [Fe II] E2         3d7-3d6.(3H).4s a4F-a4H  7/2 - 9/2                  2430.14 - 21581.62 094
+         5261.6327       3.2e-04 [Fe II] E2         3d7-3d6.(3H).4s a4F-a4H  7/2 - 11/2                 2430.14 - 21430.36 094
+         5296.8438       3.7e-04 [Fe II] E2         3d7-3d6.(3H).4s a4F-a4H  5/2 - 7/2                  2837.98 - 21711.90 094
+         5333.6610       3.7e-04 [Fe II] E2         3d7-3d6.(3H).4s a4F-a4H  5/2 - 9/2                  2837.98 - 21581.62 094
+         5376.4657       3.9e-04 [Fe II] E2         3d7-3d6.(3H).4s a4F-a4H  3/2 - 7/2                  3117.49 - 21711.90 094
+    #+end_example
+- A different multiplet is a4F-b4F
+  - Strongest line we see is 4815
+  - We also see 4890 and 4905
+    - And 4905 seems to have a different spatial distribution
+  - Details from Atomic Line List
+    #+begin_example
+      Atomic Line List version: 3.00b4   Constructed: 2021-07-21 14:47 GMT
+      Wavelength range: 0 - inf   Unit: Angstrom   Type: Air
+      Radial velocity: 0 km/s
+      Element/Spectrum: Fe II
+
+      -LAB-WAVL-ANG-AIR-|-DLAM--|--SPC--|TT|------CONFIGURATION------|-TERM--|-J_i-J_k-|--A_ki---|-TPF-|---LVL-EN--CM-1---|-REF---|
+         4745.48911      2.8e-04 [Fe II] E2          3d7-3d6.(3F2).4s a4F-b4F 9/2 - 5/2                 1872.60 - 22939.35 094
+         4774.72828      2.9e-04 [Fe II] E2          3d7-3d6.(3F2).4s a4F-b4F 9/2 - 7/2                 1872.60 - 22810.35 094
+         4814.54415      2.9e-04 [Fe II] E2          3d7-3d6.(3F2).4s a4F-b4F 9/2 - 9/2                 1872.60 - 22637.19 094
+         4852.74322      3.0e-04 [Fe II] E2          3d7-3d6.(3F2).4s a4F-b4F 7/2 - 3/2                 2430.14 - 23031.28 094
+         4874.49574      3.0e-04 [Fe II] E2          3d7-3d6.(3F2).4s a4F-b4F 7/2 - 5/2                 2430.14 - 22939.35 094
+         4905.35139      3.0e-04 [Fe II] E2          3d7-3d6.(3F2).4s a4F-b4F 7/2 - 7/2                 2430.14 - 22810.35 094
+         4947.3851       3.1e-04 [Fe II] E2          3d7-3d6.(3F2).4s a4F-b4F 7/2 - 9/2                 2430.14 - 22637.19 094
+         4950.7554       3.2e-04 [Fe II] E2          3d7-3d6.(3F2).4s a4F-b4F 5/2 - 3/2                 2837.98 - 23031.28 094
+         4973.3975       3.2e-04 [Fe II] E2          3d7-3d6.(3F2).4s a4F-b4F 5/2 - 5/2                 2837.98 - 22939.35 094
+         5005.5220       3.3e-04 [Fe II] E2          3d7-3d6.(3F2).4s a4F-b4F 5/2 - 7/2                 2837.98 - 22810.35 094
+         5020.2443       3.4e-04 [Fe II] E2          3d7-3d6.(3F2).4s a4F-b4F 3/2 - 3/2                 3117.49 - 23031.28 094
+         5043.5280       3.5e-04 [Fe II] E2          3d7-3d6.(3F2).4s a4F-b4F 3/2 - 5/2                 3117.49 - 22939.35 094
+         5049.2976       3.3e-04 [Fe II] E2          3d7-3d6.(3F2).4s a4F-b4F 5/2 - 9/2                 2837.98 - 22637.19 094
+         5076.5679       3.5e-04 [Fe II] E2          3d7-3d6.(3F2).4s a4F-b4F 3/2 - 7/2                 3117.49 - 22810.35 094
+    #+end_example
+- And one from the ground configuration a6D-b4P
+  - Strongest line is 4890
+  - Marginal detection of 4728 with MUSE, but no others
+  - Details from Atomic Line List
+    #+begin_example
+      Atomic Line List version: 3.00b4   Constructed: 2021-07-21 14:47 GMT
+      Wavelength range: 0 - inf   Unit: Angstrom   Type: Air
+      Radial velocity: 0 km/s
+      Element/Spectrum: Fe II
+
+      -LAB-WAVL-ANG-AIR-|-DLAM--|--SPC--|TT|------CONFIGURATION------|-TERM--|-J_i-J_k-|--A_ki---|-TPF-|--LVL-EN--CM-1---|-REF---|
+         4598.07612      2.8e-04 [Fe II] E2  3d6.(5D).4s-3d6.(3P2).4s a6D-b4P 5/2 - 1/2                 667.68 - 22409.82 094
+         4639.67372      2.9e-04 [Fe II] M1  3d6.(5D).4s-3d6.(3P2).4s a6D-b4P 3/2 - 1/2 4.670e-01   ASD 862.61 - 22409.82 094
+         4664.44715      3.0e-04 [Fe II] M1  3d6.(5D).4s-3d6.(3P2).4s a6D-b4P 1/2 - 1/2 1.470e-01   ASD 977.05 - 22409.82 094
+         4665.64658      2.7e-04 [Fe II] E2  3d6.(5D).4s-3d6.(3P2).4s a6D-b4P 7/2 - 3/2                 384.79 - 21812.05 094
+         4728.07038      2.8e-04 [Fe II] M1  3d6.(5D).4s-3d6.(3P2).4s a6D-b4P 5/2 - 3/2 4.530e-01   ASD 667.68 - 21812.05 094
+         4772.06446      2.9e-04 [Fe II] M1  3d6.(5D).4s-3d6.(3P2).4s a6D-b4P 3/2 - 3/2 2.300e-02   ASD 862.61 - 21812.05 094
+         4798.27582      2.9e-04 [Fe II] M1  3d6.(5D).4s-3d6.(3P2).4s a6D-b4P 1/2 - 3/2 6.800e-02   ASD 977.05 - 21812.05 094
+         4799.29908      2.5e-04 [Fe II] E2  3d6.(5D).4s-3d6.(3P2).4s a6D-b4P 9/2 - 5/2                   0.00 - 20830.55 094
+         4889.62268      2.7e-04 [Fe II] M1  3d6.(5D).4s-3d6.(3P2).4s a6D-b4P 7/2 - 5/2 3.410e-01   ASD 384.79 - 20830.55 094
+         4958.22760      2.8e-04 [Fe II] M1  3d6.(5D).4s-3d6.(3P2).4s a6D-b4P 5/2 - 5/2 5.000e-03   ASD 667.68 - 20830.55 094
+         5006.63093      2.9e-04 [Fe II] M1  3d6.(5D).4s-3d6.(3P2).4s a6D-b4P 3/2 - 5/2 2.700e-02   ASD 862.61 - 20830.55 094
+         5035.49013      3.0e-04 [Fe II] E2  3d6.(5D).4s-3d6.(3P2).4s a6D-b4P 1/2 - 5/2                 977.05 - 20830.55 094
+    #+end_example
+- 
